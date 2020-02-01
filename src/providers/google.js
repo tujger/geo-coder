@@ -112,9 +112,7 @@ export class Google {
 
       return array;
     } else {
-      throw "Invalid response" + json;
+      throw new Error("Invalid response" + json);
     }
-
   }
-
 }

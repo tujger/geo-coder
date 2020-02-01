@@ -1,7 +1,7 @@
 import {serialize} from './util.js';
 
 export class OpenStreet {
-  
+
   /**
    * @param {object} options options for OpenStreet geo lookup.
    *   `e.g. {key: XXXXX, limit: 15, zoom: 18, addressdetail: 1, lang: 'en-US'}`
@@ -22,6 +22,7 @@ export class OpenStreet {
       addressdetails: 1,
       limit: this.options.limit || 10,
       countrycodes: this.options.countrycodes || '',
+      featuretype: this.options.featuretype || '',
       'accept-language': this.options.lang || 'en-US'
     };
     url = `${url}?${serialize(params)}`

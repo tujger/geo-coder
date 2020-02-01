@@ -70,7 +70,7 @@ export class OpenCage {
 
       return array;
     } else {
-      throw "Invalid response" + json;
+      throw new Error("Invalid response" + json);
     }
 
   }

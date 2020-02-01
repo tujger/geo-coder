@@ -1,4 +1,4 @@
-import {serialize, jsonp} from './util.js';
+import {serialize} from './util.js';
 
 export class Bing {
 

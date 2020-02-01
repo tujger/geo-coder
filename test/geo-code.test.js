@@ -1,4 +1,4 @@
-import {GeoCode} from '../src/geo-code.js'
+import {GeoCode} from '..'
 
 it('#geolookup / osm', done => {
   let geoCode = new GeoCode();
